@@ -1,16 +1,13 @@
 import express from "express";
 import listRouter from "./routes/list.router";
 import itemRouter from "./routes/item.router";
-const cors = require("cors")
+import cors from "cors";
 
 const app = express()
 const port = 12345
 
-app.use(cors({
-    origin: "*"
-}))
-
-//Cors issue currently, will need to configure
+app.use(cors<Request>({
+    origin: "*"}))
 
 app.use(express.json())
 
