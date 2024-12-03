@@ -9,6 +9,7 @@
     "migrate": "prisma migrate dev",
     "build": "prisma generate && node api/index.ts"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
