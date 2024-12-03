@@ -7,7 +7,8 @@ const app = express()
 const port = 12345
 
 app.use(cors({
-    origin: "*",}))
+    origin: "*",
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],}))
 
 app.use(express.json())
 
