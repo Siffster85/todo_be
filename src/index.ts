@@ -6,8 +6,8 @@ import cors from "cors";
 const app = express()
 const port = 12345
 
-app.use(cors<Request>({
-    origin: "*"}))
+app.use(cors({
+    origin: "*",}))
 
 app.use(express.json())
 
