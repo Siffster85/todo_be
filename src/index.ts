@@ -4,7 +4,7 @@ import itemRouter from "./routes/item.router";
 import cors from "cors";
 
 const app = express()
-const port = 12345
+const port = 8000
 
 app.use(cors({
     origin: "*",
