@@ -6,7 +6,12 @@ const cors = require("cors")
 const app = express()
 const port = 12345
 
-app.use(cors())
+app.use(cors({
+    origin: "*"
+}))
+
+//Cors issue currently, will need to configure
+
 app.use(express.json())
 
 app.use("/lists", listRouter)
